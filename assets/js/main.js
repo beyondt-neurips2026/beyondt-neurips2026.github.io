@@ -7,25 +7,30 @@
   /* ---------------------------------------------------------------
      DATA
   --------------------------------------------------------------- */
-  const speakers = [
-    { name: "Albert Gu", aff: "CMU & Cartesia AI", role: "Sydney · Paris (virtual)", status: "Confirmed" },
-    { name: "Daniel Y. Fu", aff: "UC San Diego", role: "Sydney", status: "Confirmed" },
-    { name: "Krzysztof Choromanski", aff: "Google DeepMind", role: "Sydney", status: "Confirmed" },
-    { name: "Anima Anandkumar", aff: "Caltech", role: "Sydney", status: "Confirmed" },
-    { name: "Yu Cheng", aff: "Chinese University of Hong Kong", role: "Sydney", status: "Confirmed" },
-    { name: "Jürgen Schmidhuber", aff: "KAUST & IDSIA", role: "Paris", status: "Confirmed" },
-    { name: "Danqi Chen", aff: "Princeton University", role: "Paris", status: "Confirmed" },
-    { name: "Edoardo Ponti", aff: "Imperial College London", role: "Paris", status: "Confirmed" },
-    { name: "Vahab Mirrokni", aff: "Google Research", role: "Paris", status: "Confirmed" },
+  const speakersSydney = [
+    { name: "Albert Gu", aff: "CMU & Cartesia AI", status: "Confirmed" },
+    { name: "Daniel Y. Fu", aff: "UC San Diego", status: "Confirmed" },
+    { name: "Krzysztof Choromanski", aff: "Google DeepMind", status: "Confirmed" },
+    { name: "Anima Anandkumar", aff: "Caltech", status: "Confirmed" },
+    { name: "Yu Cheng", aff: "Chinese University of Hong Kong", status: "Confirmed" },
+  ];
+  const speakersParis = [
+    { name: "Jürgen Schmidhuber", aff: "KAUST & IDSIA", status: "Confirmed" },
+    { name: "Danqi Chen", aff: "Princeton University", status: "Confirmed" },
+    { name: "Albert Gu", aff: "CMU & Cartesia AI", role: "Virtual", status: "Confirmed" },
+    { name: "Edoardo Ponti", aff: "Imperial College London", status: "Confirmed" },
+    { name: "Vahab Mirrokni", aff: "Google Research", status: "Confirmed" },
   ];
 
-  const panelists = [
-    { name: "Ramin Hasani", aff: "Liquid AI & MIT", role: "Sydney", status: "Confirmed" },
-    { name: "Aditi Raghunathan", aff: "Carnegie Mellon University", role: "Sydney", status: "Confirmed" },
-    { name: "Vikram Appia", aff: "AMD", role: "Sydney", status: "Confirmed" },
-    { name: "Maximilian Beck", aff: "JKU Linz / NXAI", role: "Paris", status: "Confirmed" },
-    { name: "Danqi Chen", aff: "Princeton University", role: "Paris", status: "Confirmed" },
-    { name: "Edoardo Ponti", aff: "Imperial College London", role: "Paris", status: "Confirmed" },
+  const panelSydney = [
+    { name: "Ramin Hasani", aff: "Liquid AI & MIT", status: "Confirmed" },
+    { name: "Aditi Raghunathan", aff: "Carnegie Mellon University", status: "Confirmed" },
+    { name: "Vikram Appia", aff: "AMD", status: "Confirmed" },
+  ];
+  const panelParis = [
+    { name: "Maximilian Beck", aff: "JKU Linz / NXAI", status: "Confirmed" },
+    { name: "Danqi Chen", aff: "Princeton University", status: "Confirmed" },
+    { name: "Edoardo Ponti", aff: "Imperial College London", status: "Confirmed" },
   ];
 
   const organizers = [
@@ -61,7 +66,6 @@
     { name: "Alessio Brutti", role: "Meta-Reviewer", aff: "Fondazione Bruno Kessler" },
     { name: "Parijat Dube", role: "Meta-Reviewer", aff: "IBM" },
     { name: "Yuhui Xu", role: "Meta-Reviewer", aff: "Salesforce" },
-    { name: "Abbas Ghaddar", role: "Meta-Reviewer", aff: "Huawei Technologies Canada" },
     { name: "Hamidreza Mahyar", role: "Meta-Reviewer", aff: "McMaster University" },
     { name: "Jonathan Mamou", role: "Meta-Reviewer", aff: "Intel Labs" },
     { name: "Ruixiang Zhang", role: "Meta-Reviewer", aff: "Apple" },
@@ -97,6 +101,17 @@
     { name: "Amrit Khera", role: "Reviewer", aff: "OpenAI" },
     { name: "Richard He Bai", role: "Reviewer", aff: "Apple" },
     { name: "Omid Ghahroodi", role: "Reviewer", aff: "QCRI" },
+    { name: "Aref Jafari", role: "Meta-Reviewer", aff: "AMD" },
+    { name: "Nan Qin", role: "Meta-Reviewer", aff: "AMD" },
+    { name: "Habib Hosseini", role: "Meta-Reviewer", aff: "AMD" },
+    { name: "Utkarsh Saxena", role: "Meta-Reviewer", aff: "AMD" },
+    { name: "Mahdi Kamani", role: "Meta-Reviewer", aff: "AMD" },
+    { name: "Mahdi Saeedi", role: "Meta-Reviewer", aff: "AMD" },
+    { name: "Parsa Fashi", role: "Reviewer", aff: "AMD" },
+    { name: "Vansh Bhatia", role: "Reviewer", aff: "AMD" },
+    { name: "Akash Haridas", role: "Reviewer", aff: "AMD" },
+    { name: "Ruijing Yang", role: "Reviewer", aff: "AMD" },
+    { name: "Sharareh Younesian", role: "Reviewer", aff: "AMD" },
   ];
 
   /* ---------------------------------------------------------------
@@ -163,8 +178,10 @@
     list.forEach((p) => host.appendChild(renderPerson(p, opts)));
   }
 
-  mount("speakers-grid", speakers);
-  mount("panel-grid", panelists);
+  mount("speakers-sydney", speakersSydney);
+  mount("speakers-paris", speakersParis);
+  mount("panel-sydney", panelSydney);
+  mount("panel-paris", panelParis);
   mount("organizers-grid", organizers, { bio: true });
 
   /* ---------------------------------------------------------------

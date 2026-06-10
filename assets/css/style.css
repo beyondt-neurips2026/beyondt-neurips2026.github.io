@@ -235,6 +235,25 @@ code { font-family: var(--mono); font-size: 0.86em; }
 .person--pending .person__avatar { background: var(--paper-2); color: var(--muted); border: 1px dashed var(--line-2); }
 .section--ink .person--pending .person__avatar { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.18); color: #8b8ff0; }
 
+/* ---------- location groups (speakers / panel) ---------- */
+.people-group + .people-group { margin-top: 40px; }
+.people--center.people, .people-group .people--center { margin-left: 0; margin-right: 0; }
+.group-head {
+  display: flex; align-items: center; gap: 10px; margin: 0 0 20px;
+  padding-bottom: 12px; border-bottom: 1px solid var(--line);
+  font-family: var(--mono); font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink); font-weight: 600;
+}
+.group-head--light { color: #fff; border-bottom-color: rgba(255,255,255,.14); }
+.group-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
+.group-dot--sydney { background: var(--accent); }
+.group-dot--paris { background: var(--teal); }
+.group-tag {
+  font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); background: rgba(67,56,202,.1); padding: 3px 9px; border-radius: 999px; font-weight: 500;
+}
+.group-head--light .group-tag { color: #8b8ff0; background: rgba(139,143,240,.14); }
+
 /* ---------- ink section ---------- */
 .section--ink { background: var(--ink-bg); color: #fff; }
 .section--ink .quote { font-size: clamp(1.6rem, 4vw, 2.6rem); max-width: 800px; margin: 0 auto; font-style: italic; font-weight: 500; }

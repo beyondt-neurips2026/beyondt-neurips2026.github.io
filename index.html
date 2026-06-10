@@ -110,8 +110,8 @@
   <section class="strip">
     <div class="strip__inner">
       <div class="stat"><span class="stat__n" data-count="300" data-suffix="+">0</span><span class="stat__l">Expected attendees</span></div>
-      <div class="stat"><span class="stat__n" data-count="9">0</span><span class="stat__l">Invited speakers</span></div>
-      <div class="stat"><span class="stat__n" data-count="6">0</span><span class="stat__l">Panelists</span></div>
+      <div class="stat"><span class="stat__n" data-count="5">0</span><span class="stat__l">Speakers per city</span></div>
+      <div class="stat"><span class="stat__n" data-count="3">0</span><span class="stat__l">Panelists per city</span></div>
       <div class="stat"><span class="stat__n" data-count="75" data-suffix="+">0</span><span class="stat__l">Committee members</span></div>
       <div class="stat"><span class="stat__n" data-count="4" data-suffix="h">0</span><span class="stat__l">Discussion time</span></div>
     </div>
@@ -191,12 +191,20 @@
         <span class="kicker">02 — Invited Talks</span>
         <h2>Who you&rsquo;ll hear from</h2>
         <p class="section__intro">
-          Researchers who pioneered the very architectures at the heart of this workshop — with
-          confirmed in-person speakers secured for <strong>both candidate locations</strong>
+          Researchers who pioneered the very architectures at the heart of this workshop — with a
+          full slate of <strong>five confirmed speakers for each candidate location</strong>
           (Sydney primary, Paris alternative).
         </p>
       </div>
-      <div class="people" id="speakers-grid"></div>
+
+      <div class="people-group">
+        <div class="group-head"><span class="group-dot group-dot--sydney"></span>Sydney <span class="group-tag">primary</span></div>
+        <div class="people" id="speakers-sydney"></div>
+      </div>
+      <div class="people-group">
+        <div class="group-head"><span class="group-dot group-dot--paris"></span>Paris <span class="group-tag">alternative</span></div>
+        <div class="people" id="speakers-paris"></div>
+      </div>
     </div>
   </section>
 
@@ -208,11 +216,19 @@
         <h2 class="quote">“Will the Transformer still be the default in 2030?”</h2>
         <p class="section__intro section__intro--light">
           A one-hour interactive panel with academic and industry experts and a live debate on
-          the future of post-Transformer architectures — with a full panel confirmed for both
-          candidate locations.
+          the future of post-Transformer architectures — with <strong>three panelists confirmed
+          for each candidate location</strong>.
         </p>
       </div>
-      <div class="people people--center" id="panel-grid"></div>
+
+      <div class="people-group">
+        <div class="group-head group-head--light"><span class="group-dot group-dot--sydney"></span>Sydney <span class="group-tag">primary</span></div>
+        <div class="people" id="panel-sydney"></div>
+      </div>
+      <div class="people-group">
+        <div class="group-head group-head--light"><span class="group-dot group-dot--paris"></span>Paris <span class="group-tag">alternative</span></div>
+        <div class="people" id="panel-paris"></div>
+      </div>
     </div>
   </section>
 
@@ -220,7 +236,7 @@
   <section class="section" id="cfp">
     <div class="container">
       <div class="section__head">
-        <span class="kicker">04 — Open Call</span>
+        <span class="kicker">04 — Call for Papers</span>
         <h2 id="topics">Six directions, one agenda</h2>
         <p class="section__intro">
           We invite papers and demos on the focused directions below — spanning architecture,
