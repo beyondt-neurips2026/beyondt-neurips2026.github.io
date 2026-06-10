@@ -8,18 +8,24 @@
      DATA
   --------------------------------------------------------------- */
   const speakers = [
-    { name: "Albert Gu", aff: "Carnegie Mellon University & Cartesia AI", status: "Confirmed" },
-    { name: "Daniel Y. Fu", aff: "UC San Diego", status: "Confirmed" },
-    { name: "Yu Cheng", aff: "Chinese University of Hong Kong", status: "Confirmed" },
-    { name: "Edoardo Ponti", aff: "University of Edinburgh", status: "Confirmed" },
-    { name: "Jürgen Schmidhuber", aff: "KAUST & IDSIA", status: "Confirmed" },
-    { name: "To be announced", aff: "Sixth speaker being finalized", status: "Pending" },
+    { name: "Albert Gu", aff: "CMU & Cartesia AI", role: "Sydney · Paris (virtual)", status: "Confirmed" },
+    { name: "Daniel Y. Fu", aff: "UC San Diego", role: "Sydney", status: "Confirmed" },
+    { name: "Krzysztof Choromanski", aff: "Google DeepMind", role: "Sydney", status: "Confirmed" },
+    { name: "Anima Anandkumar", aff: "Caltech", role: "Sydney", status: "Confirmed" },
+    { name: "Yu Cheng", aff: "Chinese University of Hong Kong", role: "Sydney", status: "Confirmed" },
+    { name: "Jürgen Schmidhuber", aff: "KAUST & IDSIA", role: "Paris", status: "Confirmed" },
+    { name: "Danqi Chen", aff: "Princeton University", role: "Paris", status: "Confirmed" },
+    { name: "Edoardo Ponti", aff: "Imperial College London", role: "Paris", status: "Confirmed" },
+    { name: "Vahab Mirrokni", aff: "Google Research", role: "Paris", status: "Confirmed" },
   ];
 
   const panelists = [
-    { name: "Aditi Raghunathan", aff: "Carnegie Mellon University", status: "Confirmed" },
-    { name: "Ramin Hasani", aff: "Liquid AI & MIT", status: "Confirmed" },
-    { name: "To be announced", aff: "Third panelist being finalized", status: "Pending" },
+    { name: "Ramin Hasani", aff: "Liquid AI & MIT", role: "Sydney", status: "Confirmed" },
+    { name: "Aditi Raghunathan", aff: "Carnegie Mellon University", role: "Sydney", status: "Confirmed" },
+    { name: "Vikram Appia", aff: "AMD", role: "Sydney", status: "Confirmed" },
+    { name: "Maximilian Beck", aff: "JKU Linz / NXAI", role: "Paris", status: "Confirmed" },
+    { name: "Danqi Chen", aff: "Princeton University", role: "Paris", status: "Confirmed" },
+    { name: "Edoardo Ponti", aff: "Imperial College London", role: "Paris", status: "Confirmed" },
   ];
 
   const organizers = [

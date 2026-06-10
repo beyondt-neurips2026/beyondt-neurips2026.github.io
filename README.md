@@ -1,6 +1,6 @@
 # Beyond Transformers — NeurIPS 2026 Workshop Website
 
-Official website for **Beyond Transformers: Towards Future Emerging Sub-Quadratic Models**, a NeurIPS 2026 workshop on state-space, linear-attention, recurrent, hybrid, and diffusion language models that break the quadratic barrier of attention.
+Official website for **Beyond Transformers: Towards Future Emerging Sub-Quadratic Models**, a NeurIPS 2026 workshop on state-space, linear-attention, recurrent, and hybrid architectures that break the quadratic barrier of attention — across language, vision, video, and world models.
 
 This is a fully static site (no build step, no dependencies) designed to be hosted on **GitHub Pages**.
 
@@ -53,14 +53,10 @@ npx serve .
 
 ## Deploy to GitHub Pages
 
-1. Create a repository (the proposal lists `https://beyond-transformers.github.io/`, which
-   maps to a repo named `beyond-transformers.github.io` under that org/user).
-2. Put the contents of this `website/` folder at the **repository root** and push.
-3. In **Settings → Pages**, set the source to the `main` branch, `/ (root)` folder.
-4. The site goes live at the configured Pages URL.
-
-> If you prefer to keep the repo layout as-is, you can instead set Pages to serve from a
-> `/docs` folder and rename `website/` to `docs/`.
+1. The site lives in the repo `beyond-transformers.github.io` under the `beyondt-neurips2026`
+   account, with the files at the **repository root** on the `main` branch.
+2. In **Settings → Pages**, set the source to the `main` branch, `/ (root)` folder.
+3. The site goes live at `https://beyondt-neurips2026.github.io/beyond-transformers.github.io/`.
 
 ## Design notes
 

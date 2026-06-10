@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BeyondT — Beyond Transformers · NeurIPS 2026 Workshop</title>
-  <meta name="description" content="Beyond Transformers: Towards Future Emerging Sub-Quadratic Models. A NeurIPS 2026 workshop on state-space, linear-attention, recurrent, hybrid, and diffusion language models that break the quadratic barrier." />
+  <meta name="description" content="Beyond Transformers: Towards Future Emerging Sub-Quadratic Models. A NeurIPS 2026 workshop on state-space, linear-attention, recurrent, and hybrid architectures that break the quadratic barrier — across language, vision, video, and world models." />
   <meta name="author" content="Beyond Transformers Workshop Organizers" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="BeyondT — Beyond Transformers · NeurIPS 2026 Workshop" />
   <meta property="og:description" content="Towards Future Emerging Sub-Quadratic Models. Breaking the quadratic barrier of attention." />
-  <meta property="og:url" content="https://beyond-transformers.github.io/" />
+  <meta property="og:url" content="https://beyondt-neurips2026.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
@@ -78,18 +78,18 @@
     </div>
 
     <div class="hero__inner">
-      <span class="eyebrow">NeurIPS 2026 · Workshop · Sydney → Atlanta → Paris</span>
+      <span class="eyebrow">NeurIPS 2026 · Workshop · Sydney (primary) · Paris</span>
       <h1 class="hero__title">
         Beyond <span class="grad">Transformers</span>
       </h1>
       <p class="hero__sub">Towards Future Emerging <strong>Sub-Quadratic</strong> Models</p>
       <p class="hero__lede">
-        Rethinking foundation models with sub-quadratic, recurrent, hybrid, and diffusion
-        architectures — breaking the quadratic barrier of attention.
+        Post-Transformer, sub-quadratic architectures for the next generation of efficient
+        foundation models — across language, vision, video, and world models.
       </p>
 
       <div class="hero__meta">
-        <span class="chip"><span class="chip__k">When</span> Dec 11/12, 2026</span>
+        <span class="chip"><span class="chip__k">When</span> Dec 2026</span>
         <span class="chip"><span class="chip__k">Submit by</span> Aug 29, 2026</span>
         <span class="chip"><span class="chip__k">Reviews via</span> OpenReview</span>
       </div>
@@ -109,11 +109,11 @@
   <!-- Stats strip -->
   <section class="strip">
     <div class="strip__inner">
-      <div class="stat"><span class="stat__n" data-count="500" data-suffix="+">0</span><span class="stat__l">Expected attendees</span></div>
-      <div class="stat"><span class="stat__n" data-count="6">0</span><span class="stat__l">Invited speakers</span></div>
+      <div class="stat"><span class="stat__n" data-count="300" data-suffix="+">0</span><span class="stat__l">Expected attendees</span></div>
+      <div class="stat"><span class="stat__n" data-count="9">0</span><span class="stat__l">Invited speakers</span></div>
+      <div class="stat"><span class="stat__n" data-count="6">0</span><span class="stat__l">Panelists</span></div>
       <div class="stat"><span class="stat__n" data-count="75" data-suffix="+">0</span><span class="stat__l">Committee members</span></div>
-      <div class="stat"><span class="stat__n" data-count="2">0</span><span class="stat__l">Poster sessions</span></div>
-      <div class="stat"><span class="stat__n" data-count="3" data-suffix=".5h+">0</span><span class="stat__l">Discussion time</span></div>
+      <div class="stat"><span class="stat__n" data-count="4" data-suffix="h">0</span><span class="stat__l">Discussion time</span></div>
     </div>
   </section>
 
@@ -134,11 +134,13 @@
         <p>
           <strong>Beyond Transformers</strong> is a workshop on the emerging generation of
           <strong>sub-quadratic and post-Transformer architectures</strong> — state-space models,
-          linear and gated-linear attention, modern recurrent networks, hybrids, and
-          non-autoregressive / diffusion language models — that promise to break the quadratic
-          barrier while matching, or exceeding, Transformer quality. These models moved from
-          research curiosity to production reality in barely two years (Mamba, xLSTM, RWKV,
-          gated linear attention, Jamba, Nemotron-H), yet the community working on them is
+          linear and gated-linear attention, modern recurrent networks, and hybrid designs — that
+          promise to break the quadratic barrier while matching, or exceeding, Transformer quality.
+          These models moved from research curiosity to production reality in barely two years
+          (Mamba, xLSTM, RWKV, gated linear attention, Jamba, Nemotron-H). Crucially, the shift
+          beyond attention is <strong>not confined to language</strong>: sub-quadratic and recurrent
+          designs are reshaping vision, video generation, world models, audio and speech, scientific
+          sequence modeling, and long-horizon agents — yet the community working on them is
           fragmented across architecture, training, systems, hardware, and theory.
         </p>
       </div>
@@ -169,13 +171,14 @@
       <div class="callout">
         <h3>Why this, why now?</h3>
         <p>
-          The last two years marked an inflection point. Sub-quadratic models progressed from
-          small-scale proofs of concept to architectures that match Transformers at
-          multi-billion-parameter scale — and hybrids now ship in production systems from major
-          industrial labs. Demand has outrun the Transformer, credible alternatives have matured,
-          and the field is fragmenting across SSM, linear-attention, diffusion-LM, systems, and
-          hardware efforts with non-comparable baselines. A NeurIPS workshop is the natural place
-          to coordinate this agenda now, while the design space is still open.
+          Sub-quadratic models went from proofs of concept to architectures matching Transformers
+          at multi-billion-parameter scale, and hybrids now ship in production. Demand has outrun
+          attention and credible alternatives have matured — yet the SSM, linear-attention, systems,
+          and hardware efforts advance in parallel with incompatible benchmarks and few shared
+          baselines. Without a venue that contrasts these frameworks and standardizes evaluation,
+          the field risks duplicated effort, non-comparable claims, and missed
+          algorithm–systems–hardware co-design. A NeurIPS workshop is the natural place to
+          coordinate this agenda now, while the design space is still open.
         </p>
       </div>
     </div>
@@ -188,8 +191,9 @@
         <span class="kicker">02 — Invited Talks</span>
         <h2>Who you&rsquo;ll hear from</h2>
         <p class="section__intro">
-          A lineup of leading researchers who pioneered the post-Transformer architectures at the
-          heart of this workshop.
+          Researchers who pioneered the very architectures at the heart of this workshop — with
+          confirmed in-person speakers secured for <strong>both candidate locations</strong>
+          (Sydney primary, Paris alternative).
         </p>
       </div>
       <div class="people" id="speakers-grid"></div>
@@ -203,8 +207,9 @@
         <span class="kicker kicker--light">03 — The Panel</span>
         <h2 class="quote">“Will the Transformer still be the default in 2030?”</h2>
         <p class="section__intro section__intro--light">
-          A 45-minute interactive panel with academic and industry experts and a live debate on
-          the future of post-Transformer architectures.
+          A one-hour interactive panel with academic and industry experts and a live debate on
+          the future of post-Transformer architectures — with a full panel confirmed for both
+          candidate locations.
         </p>
       </div>
       <div class="people people--center" id="panel-grid"></div>
@@ -216,11 +221,11 @@
     <div class="container">
       <div class="section__head">
         <span class="kicker">04 — Open Call</span>
-        <h2 id="topics">Eight threads, one agenda</h2>
+        <h2 id="topics">Six directions, one agenda</h2>
         <p class="section__intro">
-          We invite papers and demos across the full lifecycle — architecture, training,
-          conversion, inference, systems, hardware, and evaluation. Topics include, but are not
-          limited to:
+          We invite papers and demos on the focused directions below — spanning architecture,
+          training, conversion, inference, systems, hardware, evaluation, and modalities beyond
+          language. Topics include, but are not limited to:
         </p>
       </div>
 
@@ -228,64 +233,49 @@
         <article class="topic">
           <h3>Sub-Quadratic &amp; Recurrent Architectures</h3>
           <ul>
-            <li>State-space models and selective/structured SSMs (S4, Mamba family)</li>
-            <li>Linear, kernelized &amp; gated-linear attention; modern RNNs (xLSTM, RWKV, DeltaNet)</li>
-            <li>Structured-matrix and convolutional token mixers as attention replacements</li>
+            <li>SSMs, linear / gated-linear attention, and modern RNNs (xLSTM, RWKV)</li>
+            <li>Structured-matrix mixers as attention replacements</li>
             <li>Expressivity, recall &amp; length generalization of non-attention models</li>
           </ul>
         </article>
         <article class="topic">
           <h3>Hybrid &amp; Modular Architectures</h3>
           <ul>
-            <li>Interleaving attention with sub-quadratic layers — how much attention is needed?</li>
-            <li>Mixture-of-Experts &amp; sparse routing with sub-quadratic backbones</li>
+            <li>How much attention is really needed? Interleaving with sub-quadratic layers</li>
+            <li>Mixture-of-Experts &amp; sparse routing</li>
             <li>Modular, many-in-one models that adapt to hardware and budgets</li>
-          </ul>
-        </article>
-        <article class="topic">
-          <h3>Non-Autoregressive &amp; Diffusion LMs</h3>
-          <ul>
-            <li>Diffusion and masked/parallel decoding for faster, scalable generation</li>
-            <li>Trade-offs between autoregressive and non-autoregressive paradigms</li>
-          </ul>
-        </article>
-        <article class="topic">
-          <h3>Long-Context &amp; Memory-Centric Models</h3>
-          <ul>
-            <li>Million-token context, persistent memory &amp; retrieval-aware architectures</li>
-            <li>KV-cache elimination, compression &amp; bounded-state designs</li>
-            <li>Architectures for agentic, long-horizon, and stateful execution</li>
           </ul>
         </article>
         <article class="topic">
           <h3>Efficient Training, Distillation &amp; Conversion</h3>
           <ul>
-            <li>Efficient pre-training of new and hybrid architectures</li>
-            <li>Distilling / up-cycling Transformers into sub-quadratic models</li>
+            <li>Pre-training new and hybrid architectures</li>
+            <li>Distilling / up-cycling Transformers into sub-quadratic models at low cost</li>
             <li>Parameter-efficient fine-tuning for emerging architectures</li>
           </ul>
         </article>
         <article class="topic">
           <h3>Inference, Systems &amp; Hardware Co-Design</h3>
           <ul>
-            <li>Hardware-aware kernels &amp; serving for recurrent/state-centric compute</li>
+            <li>Long-context and KV-cache-free serving; hardware-aware kernels</li>
             <li>Speculative decoding &amp; quantization for non-Transformer / hybrid models</li>
-            <li>Accelerator, memory-hierarchy &amp; edge/low-power co-design</li>
-          </ul>
-        </article>
-        <article class="topic">
-          <h3>Reasoning &amp; Test-Time Compute</h3>
-          <ul>
-            <li>Reasoning &amp; adaptive test-time compute with sub-quadratic backbones</li>
-            <li>Allocating “thinking time” without incurring quadratic cost</li>
+            <li>Efficient reasoning / test-time compute; accelerator &amp; edge co-design</li>
           </ul>
         </article>
         <article class="topic">
           <h3>Evaluation, Benchmarking &amp; Theory</h3>
           <ul>
-            <li>Compute-aware evaluation: latency/quality, memory &amp; energy trade-offs</li>
-            <li>Benchmarks, datasets &amp; leaderboards for long-context models</li>
+            <li>Compute-aware metrics: quality vs. latency / memory / energy</li>
+            <li>Long-context benchmarks, datasets &amp; leaderboards</li>
             <li>Theory of state-space, linear-attention &amp; recurrent models</li>
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Beyond Language</h3>
+          <ul>
+            <li>Sub-quadratic models for vision, video generation &amp; world models</li>
+            <li>Audio &amp; speech, scientific sequences, and long-horizon agents</li>
+            <li>Non-autoregressive / diffusion decoding</li>
           </ul>
         </article>
       </div>
@@ -348,8 +338,8 @@
           <span class="tl__title">Camera-ready deadline</span>
         </li>
         <li class="tl tl--key">
-          <span class="tl__date">December 11/12, 2026</span>
-          <span class="tl__title">Workshop day</span>
+          <span class="tl__date">December 2026</span>
+          <span class="tl__title">Workshop day · NeurIPS 2026</span>
         </li>
       </ol>
     </div>
@@ -360,25 +350,27 @@
     <div class="container">
       <div class="section__head">
         <span class="kicker">07 — The Day</span>
-        <h2>From 09:00 to 17:00</h2>
+        <h2>From 08:45 to 17:15</h2>
         <p class="section__intro">
-          A full-day program that balances dissemination with discussion — with well over 3.5
-          hours of free-form discussion and networking across breaks, posters, and the panel.
+          A full-day program built to maximize discussion over passive listening — with
+          <strong>nearly four hours</strong> devoted to discussion, networking, Q&amp;A, and posters
+          across the panel and three breaks.
         </p>
       </div>
 
       <div class="agenda">
-        <div class="agenda__row"><span class="agenda__time">09:00–09:15</span><span class="agenda__item">Opening remarks</span></div>
-        <div class="agenda__row"><span class="agenda__time">09:15–10:15</span><span class="agenda__item">Invited talks <em>(block 1)</em></span></div>
-        <div class="agenda__row"><span class="agenda__time">10:15–11:00</span><span class="agenda__item">Poster session 1 + networking break</span></div>
-        <div class="agenda__row"><span class="agenda__time">11:00–12:00</span><span class="agenda__item">Invited talks <em>(block 2)</em></span></div>
-        <div class="agenda__row"><span class="agenda__time">12:00–13:00</span><span class="agenda__item">Contributed orals <em>(6 × 10 min)</em></span></div>
-        <div class="agenda__row"><span class="agenda__time">13:00–14:00</span><span class="agenda__item">Lunch + networking</span></div>
-        <div class="agenda__row"><span class="agenda__time">14:00–15:00</span><span class="agenda__item">Invited talks <em>(block 3)</em></span></div>
-        <div class="agenda__row agenda__row--hl"><span class="agenda__time">15:00–15:45</span><span class="agenda__item">Interactive panel discussion</span></div>
-        <div class="agenda__row"><span class="agenda__time">15:45–16:30</span><span class="agenda__item">Poster session 2 + networking break</span></div>
-        <div class="agenda__row"><span class="agenda__time">16:30–16:45</span><span class="agenda__item">Demo spotlight</span></div>
-        <div class="agenda__row"><span class="agenda__time">16:45–17:00</span><span class="agenda__item">Awards &amp; closing remarks</span></div>
+        <div class="agenda__row"><span class="agenda__time">08:45–09:00</span><span class="agenda__item">Opening remarks</span></div>
+        <div class="agenda__row"><span class="agenda__time">09:00–10:00</span><span class="agenda__item">Keynotes 1–2 <em>(2 × 30 min)</em></span></div>
+        <div class="agenda__row"><span class="agenda__time">10:00–10:30</span><span class="agenda__item">Morning discussion break</span></div>
+        <div class="agenda__row"><span class="agenda__time">10:30–11:00</span><span class="agenda__item">Contributed oral spotlights <em>(3 × 10 min)</em></span></div>
+        <div class="agenda__row"><span class="agenda__time">11:00–12:00</span><span class="agenda__item">Keynotes 3–4 <em>(2 × 30 min)</em></span></div>
+        <div class="agenda__row"><span class="agenda__time">12:00–13:00</span><span class="agenda__item">Lunch &amp; discussion break</span></div>
+        <div class="agenda__row"><span class="agenda__time">13:00–13:30</span><span class="agenda__item">Contributed oral spotlights <em>(3 × 10 min)</em></span></div>
+        <div class="agenda__row"><span class="agenda__time">13:30–14:00</span><span class="agenda__item">Keynote 5</span></div>
+        <div class="agenda__row agenda__row--hl"><span class="agenda__time">14:00–15:00</span><span class="agenda__item">Interactive panel: <em>“Will the Transformer still be the default in 2030?”</em></span></div>
+        <div class="agenda__row"><span class="agenda__time">15:00–15:30</span><span class="agenda__item">Afternoon discussion break</span></div>
+        <div class="agenda__row"><span class="agenda__time">15:30–17:00</span><span class="agenda__item">Poster session + live demo &amp; systems showcase</span></div>
+        <div class="agenda__row"><span class="agenda__time">17:00–17:15</span><span class="agenda__item">Best paper / poster / demo awards &amp; closing</span></div>
       </div>
       <p class="note">Times are indicative and subject to final logistics.</p>
     </div>
